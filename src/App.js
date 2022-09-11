@@ -6,6 +6,7 @@ import Footer from './components/Footer/Footer';
 import Favoritos from './screens/Favorites/Favorites';
 
 
+
 function App() {
   return (
     <React.Fragment>

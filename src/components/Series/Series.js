@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import TarjetasSerie from '../TarjetasSerie/TarjetasSerie';
+import './Series.css'
 
 class Series extends Component{
     constructor(props){
@@ -20,7 +21,7 @@ class Series extends Component{
         return(
             <>
             <div className='series'>
-                <h1> SERIES POPULARES </h1>
+                <h1 className='encabezado'> SERIES POPULARES </h1>
                 <section className='card-container'>
                     {
                         this.state.data.length > 0 ?

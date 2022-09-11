@@ -33,10 +33,7 @@ nav ul {
     font-weight: bold;
     padding: 8px;
     border-radius: 3px;
-    /* background-color: #c1b8d8; */
-
-    /* style */
-    color: black;
+    color: #6A5EA8;
     text-decoration: none;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
 }
