@@ -5,7 +5,8 @@ function Footer(){
 
     return (
         <footer>
-            <p> Lolucha</p>
+           <p> Los esperamos pronto </p>
+           <p> Gonzalo Ruiz, Lola Biscay y Matias Silbert</p>
         </footer>
     )
 }
