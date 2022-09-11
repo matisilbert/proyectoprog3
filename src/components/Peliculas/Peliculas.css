@@ -1,0 +1,46 @@
+.encabezado{
+    text-align: center;
+    color: red;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 40px 20px 20px;
+    background-color: black;
+    font-size: 20px;
+    padding: 10px;
+
+}
+
+
+.card-container{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.TarjetasPeli{
+    display: flex;
+    background-color: black;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .cardContainer{
+        width: 1000px;
+        justify-content: flex-end;
+        margin-left: 0px;
+        /* necesito que haya 2 por fila */
+    }
+}
+
+@media (max-width: 420px) {
+    .cardContainer{
+        width: 1300px;
+        flex-direction: column;
+    }
+    .encabezado{
+        font-size: 14px;
+    }
+
+    .ver-todas{
+        margin-left: 35px;
+    }
+}

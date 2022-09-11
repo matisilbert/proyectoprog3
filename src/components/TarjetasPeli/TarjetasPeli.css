@@ -1,0 +1,22 @@
+.pelicula-card{
+    margin: 20px 20px;
+    width: 20%;
+    height: min-content;
+    display: flex;
+    flex-direction: column;
+}
+
+.mostrar{
+    display: block;
+    text-align: center;
+    justify-content: center;
+    color: red
+}
+
+.ocultar{
+    display: none;
+}
+
+.botones button:hover {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}

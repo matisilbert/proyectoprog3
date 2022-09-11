@@ -1,5 +1,6 @@
 import React,{Component} from 'react'
 import TarjetasPeli from '../TarjetasPeli/TarjetasPeli';
+import './Peliculas.css'
 
 
 class Peliculas extends Component {
@@ -37,7 +38,7 @@ class Peliculas extends Component {
         <div className='peliculas'>
             
 
-            <h1>PELÍCULAS POPULARES</h1>
+            <h1 className='encabezado'>PELÍCULAS POPULARES</h1>
 
             <section className="card-container">
                 {
