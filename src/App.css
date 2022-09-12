@@ -1,6 +1,7 @@
 
 body{
-    background-color: black
+    background-image: url('/public/img/fondo.png');
+    background-repeat: repeat;
     
 }
 
