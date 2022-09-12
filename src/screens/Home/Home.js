@@ -8,6 +8,7 @@ import "./Home.css"
 function Home(){
     return(
         <>
+        
         <div>     
             <Peliculas/>
         </div>

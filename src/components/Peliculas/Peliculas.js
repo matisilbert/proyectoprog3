@@ -1,6 +1,8 @@
 import React,{Component} from 'react'
 import TarjetasPeli from '../TarjetasPeli/TarjetasPeli';
+import Buscador from '../Buscador/Buscador'
 import './Peliculas.css'
+import { Link } from 'react-router-dom';
 
 
 class Peliculas extends Component {
@@ -13,7 +15,6 @@ class Peliculas extends Component {
     }
 
     componentDidMount(){
-        
         fetch('https://api.themoviedb.org/3/movie/top_rated?api_key=ec7d1aeea6d41d212821b84124febd74&language=en-US&page=1')
         .then(resp => resp.json())
         .then(data => {
@@ -23,16 +24,22 @@ class Peliculas extends Component {
         .catch(err => console.log(err))  
     }
 
+    buscarPeli(titulo){
+        fetch(`https://api.themoviedb.org/3/search/movie?api_key=ec7d1aeea6d41d212821b84124febd74&query=${titulo}`)
+        .then(res => res.json())
+        .then(data => this.setState({
+            data: data.results
+        }))
+        .catch(err => console.log(err))
+    }
     
-
-
   render() {
     return (
     <>
         <div className='peliculas'>
-            
+            <Buscador filtrar={(titulo) => this.buscarPeli(titulo)}/>
 
-            <h1 className='encabezadoPeli'>PELÍCULAS POPULARES</h1>
+            <h1 className='encabezadoPeli'> PELÍCULAS POPULARES </h1>
 
             <section className="card-container">
                 {
@@ -46,9 +53,14 @@ class Peliculas extends Component {
                         id = {key.id}
                         agregar = {(id) => this.agregarFavoritos(id)}
                         />):
-                    <h1>Cargando..</h1>
+                        <h1>Cargando..</h1>
                 }
             </section>
+            <div>
+                <Link to="/peliculasPopulares">
+                    <button className='botonVerTodoPeli'> Ver todo </button>
+                </Link>
+            </div>
         </div>
     </>
     )

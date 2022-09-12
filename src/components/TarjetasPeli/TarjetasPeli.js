@@ -9,7 +9,7 @@ class TarjetasPeli extends Component {
     super(props)
     this.state ={
       claseDescripcion: 'ocultar', /*estados que se van a modificar dependiendo de si quiero ver la descripcion o no*/
-      textoDescripcion: 'ver descripcion',
+      textoDescripcion: 'Ver descripcion',
       favoritos: false
     };
   };
@@ -37,11 +37,11 @@ class TarjetasPeli extends Component {
             <h1><Link className='TituloPeli' to={`/detalle/${this.props.id}`}> {this.props.name}</Link></h1>
             <p className={this.state.claseDescripcion}>{this.props.descripcion}</p>
 
-            <div className='botones'>
+            <div className='botonesPeli'>
               {this.state.favoritos ? <button onClick={() => this.removeFavoritos(this.props.id)}> Sacar de Favoritos</button>: <button onClick={() => this.agregarFavoritos(this.props.id)} > Agregar a Favoritos</button> }
               <button onClick={() => this.mostrarDescripcion()}> {this.state.textoDescripcion} </button>
-              <Link to="/peliculasPopulares">
-                <button> Ver mas</button>
+              <Link to="/detallePeli">
+                <button> Ver detalle </button>
               </Link>
             </div>
             

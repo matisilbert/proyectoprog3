@@ -20,7 +20,20 @@
     display: flex;
     color: white;
 }
-
+.botonVerTodoPeli{
+    text-align: center;
+    width: 100px;
+    height: 50px;
+    background: #C9C0F6;
+    border: none;
+    font-size:12pt;
+    float: center;
+    color: #6A5EA8;
+    padding-left: 10px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
 
 
 @media (max-width: 768px) {

@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import { Link } from 'react-router-dom';
 import TarjetasSerie from '../TarjetasSerie/TarjetasSerie';
 import './Series.css'
 
@@ -38,6 +39,11 @@ class Series extends Component{
                     }
 
                 </section>
+                    <div>
+                        <Link to="/seriesPopulares">
+                            <button className='botonVerTodoSerie'> Ver Todo </button>
+                        </Link>
+                    </div>
             </div>
             </>
         )

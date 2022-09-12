@@ -12,7 +12,7 @@ function Header (){
         <nav>
             <ul className='main-nav'>
                 <Link to= "/">
-                    <img src='/img/logo.png' alt= 'logo'/>
+                    <img src='/img/logo.png'  alt= 'logo'/>
                 </Link>
                 <Link to= "/"> Home </Link>
                 <Link to=  "/favoritos"> Favoritos </Link>

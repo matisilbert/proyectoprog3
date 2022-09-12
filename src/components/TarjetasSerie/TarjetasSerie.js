@@ -7,7 +7,7 @@ class TarjetasSerie extends Component {
         super(props)
         this.state={
             claseDescripcion: 'ocultar', /*estados que se van a modificar dependiendo de si quiero ver la descripcion o no*/
-            textoDescripcion: 'ver descripcion',
+            textoDescripcion: 'Ver descripcion',
             favoritos: false
         }
     }
@@ -33,11 +33,11 @@ class TarjetasSerie extends Component {
                 <h1> <Link className='TituloSerie' to={`/detalleSerie/${this.props.id}`}> {this.props.name} </Link> </h1>
             <p className={this.state.claseDescripcion}>{this.props.descripcion}</p> {/* este deberia solo aparecer si tocamos el Ver mas */}
             
-            <div className='botones'>
+            <div className='botonesSerie'>
               <button onClick={() => this.mostrarDescripcion()}> {this.state.textoDescripcion} </button>
               <button onClick={() => this.props.agregarFavoritos(this.props.id)} > Agregar a Favoritos</button>
-              <Link to="/SeriesPopulares">
-                <button> Ver mas</button>
+              <Link to="/detalleSerie">
+                <button> Ver detalle </button>
               </Link>
             </div>
             </div>

@@ -21,7 +21,7 @@
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 
-.botones{
+.botonesPeli{
         background-color: #C9C0F6;
         border: none;
         color: white;
@@ -29,11 +29,27 @@
         text-align: center;
         text-decoration: none;
         display: inline-block;
-        font-size: 16px;
+        font-size: 12px;
+        border-radius: 5px;
     }
 
-    .TituloPeli{
-        text-decoration: none;
-        color: white;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
+button{
+    text-align: center;
+    width: 100px;
+    height: 50px;
+    background: #C9C0F6;
+    border: none;
+    font-size:12pt;
+    float: center;
+    color: #6A5EA8;
+    padding-left: 10px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.TituloPeli{
+    text-decoration: none;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     }

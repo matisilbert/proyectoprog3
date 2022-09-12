@@ -6,6 +6,8 @@ import Footer from './components/Footer/Footer';
 import Favoritos from './screens/Favorites/Favorites';
 import PeliculasPopulares from './components/PeliculasPopulares/PeliculasPopulares'
 import SeriesPopulares from './components/SeriesPopulares/SeriesPopulares'
+import DetallePeli from './components/DetallePeli/DetallePeli'
+import DetalleSerie from './components/DetalleSerie/DetalleSerie'
 import './App.css'
 
 
@@ -17,8 +19,11 @@ function App() {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/favoritos" component={Favoritos} />
-          <Route path="/PeliculasPopulares" component={PeliculasPopulares} />
-          <Route path="/SeriesPopulares" component={SeriesPopulares} />
+          <Route path="/detallePeli" component={DetallePeli} />
+          <Route path="/detalleSerie" component={DetalleSerie} />
+          <Route path="/peliculasPopulares" component={PeliculasPopulares} />
+          <Route path="/seriesPopulares" component={SeriesPopulares} />
+
         </Switch>
       </main>
       <Footer />
