@@ -16,20 +16,14 @@ class Peliculas extends Component {
         
         fetch('https://api.themoviedb.org/3/movie/top_rated?api_key=ec7d1aeea6d41d212821b84124febd74&language=en-US&page=1')
         .then(resp => resp.json())
-        .then(data => this.setState({
+        .then(data => {
+            this.setState({
             data: data.results.slice(0,4) /*Para que se aparezcan solo 4 pelis*/
-        }))
+        })})
         .catch(err => console.log(err))  
     }
 
-    buscarPeliculas(titulo){
-        fetch(`https://api.themoviedb.org/3/search/movie?api_key=ec7d1aeea6d41d212821b84124febd74&query=${titulo}`)
-        .then(resp => resp.json())
-        .then(data => this.setState({
-            data: data.results
-        }))
-        .catch(error => console.log(error))
-    }
+    
 
 
   render() {
@@ -38,13 +32,13 @@ class Peliculas extends Component {
         <div className='peliculas'>
             
 
-            <h1 className='encabezado'>PELÍCULAS POPULARES</h1>
+            <h1 className='encabezadoPeli'>PELÍCULAS POPULARES</h1>
 
             <section className="card-container">
                 {
                         this.state.data.length > 0 ?
                         this.state.data.map((key, idx) => 
-                        <TarjetasPeli
+                        <TarjetasPeli 
                         key={key + idx} 
                         name={key.title} 
                         image={key.poster_path}

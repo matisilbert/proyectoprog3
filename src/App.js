@@ -4,7 +4,7 @@ import Home from './screens/Home/Home';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import Favoritos from './screens/Favorites/Favorites';
-
+import './App.css'
 
 
 function App() {

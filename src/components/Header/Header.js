@@ -16,7 +16,7 @@ function Header (){
                 </Link>
                 <Link to= "/"> Home </Link>
                 <Link to="/peliculas/populares">Películas Populares</Link>
-                <Link to="/peliculas/top_rated">Películas Top Rated</Link>
+                <Link to="/series/populares"> Series Populares</Link>
                 <Link to=  "/favoritos"> Favoritos </Link>
             </ul>
         </nav>

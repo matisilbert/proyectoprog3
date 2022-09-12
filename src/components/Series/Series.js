@@ -12,23 +12,24 @@ class Series extends Component{
     componentDidMount(){
         fetch('https://api.themoviedb.org/3/tv/popular?api_key=ec7d1aeea6d41d212821b84124febd74')
         .then(res => res.json())
-        .then(data => this.setState({
+        .then(data => {
+            this.setState({
             data: data.results.slice(0,4)
-        }))
+        })})
         .catch(error => console.log(error))
     }
     render(){
         return(
             <>
             <div className='series'>
-                <h1 className='encabezado'> SERIES POPULARES </h1>
+                <h1 className='encabezadoSerie'> SERIES POPULARES </h1>
                 <section className='card-container'>
                     {
                         this.state.data.length > 0 ?
                         this.state.data.map((key, idx) => 
                         <TarjetasSerie
                         key={key + idx} 
-                        name={key.title} 
+                        name={key.name} 
                         image={key.poster_path}
                         descripcion={key.overview}
                         id = {key.id}

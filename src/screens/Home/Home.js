@@ -8,12 +8,7 @@ function Home(){
 
     return(
         <>
-        <div className="bienvenida">
-            <div>
-                <h1>Bienvenido</h1>
-                <h2>Millones de series, peliculas y personajes por descubrir. Explora Ahora.</h2>
-            </div>
-        </div>
+       
         <div>     
             <Peliculas/>
         </div>

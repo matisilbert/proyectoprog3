@@ -30,7 +30,7 @@ class TarjetasSerie extends Component {
             <article className='serie-card'>
             <img src={`https://image.tmdb.org/t/p/w342/${this.props.image}`} alt=""></img>
             <div className='contenido'>
-                <h1> <Link to={`/detalleSerie/${this.props.id}`}> {this.props.name} </Link> </h1>
+                <h1> <Link className='TituloSerie' to={`/detalleSerie/${this.props.id}`}> {this.props.name} </Link> </h1>
             <p className={this.state.claseDescripcion}>{this.props.descripcion}</p> {/* este deberia solo aparecer si tocamos el Ver mas */}
             
             <div className='botones'>

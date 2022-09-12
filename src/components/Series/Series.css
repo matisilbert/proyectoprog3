@@ -1,19 +1,18 @@
-.encabezado{
+.encabezadoSerie{
     text-align: center;
-    color: red;
+    color: #C9C0F6;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 40px 20px 20px;
-    background-color: black;
+    background-color: #6A5EA8;
     font-size: 20px;
     padding: 10px;
-
 }
-
 
 .card-container{
     display: flex;
     justify-content: center;
     padding: 10px;
+    text-align: center;
 }
 
 .TarjetasSerie{
