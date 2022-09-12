@@ -6,8 +6,8 @@ function Footer(){
 
     return (
         <footer>
-           <p> Los esperamos pronto </p>
-           <p> Gonzalo Ruiz, Lola Biscay y Matias Silbert</p>
+           <p className='footer'> Los esperamos pronto </p>
+           <p className='footer'> Gonzalo Ruiz, Lola Biscay y Matias Silbert</p>
         </footer>
     )
 }

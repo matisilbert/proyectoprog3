@@ -36,6 +36,9 @@ class TarjetasSerie extends Component {
             <div className='botones'>
               <button onClick={() => this.mostrarDescripcion()}> {this.state.textoDescripcion} </button>
               <button onClick={() => this.props.agregarFavoritos(this.props.id)} > Agregar a Favoritos</button>
+              <Link to="/SeriesPopulares">
+                <button> Ver mas</button>
+              </Link>
             </div>
             </div>
             </article>

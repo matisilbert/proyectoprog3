@@ -40,7 +40,11 @@ class TarjetasPeli extends Component {
             <div className='botones'>
               {this.state.favoritos ? <button onClick={() => this.removeFavoritos(this.props.id)}> Sacar de Favoritos</button>: <button onClick={() => this.agregarFavoritos(this.props.id)} > Agregar a Favoritos</button> }
               <button onClick={() => this.mostrarDescripcion()}> {this.state.textoDescripcion} </button>
+              <Link to="/peliculasPopulares">
+                <button> Ver mas</button>
+              </Link>
             </div>
+            
 
           </div>
 
