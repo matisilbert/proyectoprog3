@@ -19,8 +19,8 @@ function App() {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/favoritos" component={Favoritos} />
-          <Route path="/detallePeli" component={DetallePeli} />
-          <Route path="/detalleSerie" component={DetalleSerie} />
+          <Route path="/detallePeli/:id" component={DetallePeli} />
+          <Route path="/detalleSerie/:id" component={DetalleSerie} />
           <Route path="/peliculasPopulares" component={PeliculasPopulares} />
           <Route path="/seriesPopulares" component={SeriesPopulares} />
 
