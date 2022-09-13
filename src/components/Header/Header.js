@@ -7,8 +7,6 @@ import './Header.css'
 
 function Header (){
     return (
-
-
         <nav>
             <ul className='main-nav'>
                 <Link to= "/">
